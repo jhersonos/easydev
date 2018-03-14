@@ -15,26 +15,26 @@ $(document).ready(function(){
 		$('#modal').modal('open');	
 	})
 
-	$(selector).on("submit",function(ev){
-		ev.preventDefault()
+	// $(selector).on("submit",function(ev){
+	// 	ev.preventDefault()
 
-		sendForm($(this))
+	// 	sendForm($(this))
 
-		return false		
-	})
+	// 	return false		
+	// })
 
-	function sendForm(){
-		var $form = $(selector)
-		$.ajax({
-		    url: $form.attr("action"), 
-		    method: "POST",
-		    data: $form.formObject(),
-		    dataType: "json",
-		    success:function(){		    	
-		    	$("#info-contact").html("Enviamos tu mensaje, pronto nos pondremos en contacto contigo")
-		    	$(selector).trigger("reset");
-		    }
-		})
-	}
+	// function sendForm(){
+	// 	var $form = $(selector)
+	// 	$.ajax({
+	// 	    url: $form.attr("action"), 
+	// 	    method: "POST",
+	// 	    data: $form.formObject(),
+	// 	    dataType: "json",
+	// 	    success:function(){		    	
+	// 	    	$("#info-contact").html("Enviamos tu mensaje, pronto nos pondremos en contacto contigo")
+	// 	    	$(selector).trigger("reset");
+	// 	    }
+	// 	})
+	// }
 
 })

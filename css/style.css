@@ -43,6 +43,12 @@ p {
   .parallax-container .section {
     width: 100%;
   }
+#modal1 h4{
+  color:#8b8b8b;
+}
+.more{
+  color:#c6c6c6 !important;
+}
 
 
 @media only screen and (max-width : 992px) {
