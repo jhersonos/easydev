@@ -15,26 +15,17 @@ $(document).ready(function(){
 		$('#modal').modal('open');	
 	})
 
-	// $(selector).on("submit",function(ev){
-	// 	ev.preventDefault()
+	 var instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true
+  });
 
-	// 	sendForm($(this))
+  // Or with jQuery
 
-	// 	return false		
-	// })
-
-	// function sendForm(){
-	// 	var $form = $(selector)
-	// 	$.ajax({
-	// 	    url: $form.attr("action"), 
-	// 	    method: "POST",
-	// 	    data: $form.formObject(),
-	// 	    dataType: "json",
-	// 	    success:function(){		    	
-	// 	    	$("#info-contact").html("Enviamos tu mensaje, pronto nos pondremos en contacto contigo")
-	// 	    	$(selector).trigger("reset");
-	// 	    }
-	// 	})
-	// }
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+        
 
 })
